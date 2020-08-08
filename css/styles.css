@@ -20,46 +20,66 @@ h3 {
 }
 
 .hero {
-    background-color: white;
+    background-image: url(../img/hero2.jpg);
+    filter: blur(0px);
     background-size: cover;
     height: 100vh;
     margin: 0;
-    margin-top: 4rem;
-}
-
-.img-hero {
-    margin: 0 auto;
-    max-width: 100%;
-    display: block;
-    position: relative;
-    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .slogan {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
-    border-style: solid;
+    border: 3px solid var(--rojo);
+    border-style: solid solid solid dotted;
+    border-radius: 0 0 15px 0;
+    margin-top: 2rem;
+    padding: 0 2rem 0 2rem;
+    text-shadow: 1px 2px 3px var(--oscuro);
 }
 
 .slogan h1 {
-    color: var(--oscuro);
+    color: white;
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
     font-family: 'Libre Baskerville', serif;
 }
 
 .slogan p {
-    color: var(--rojo);
+    color: white;
     font-size: 3.5rem;
     margin: 1.5rem;
     font-family: 'Lato', sans-serif;
 }
 
-.yellow-div {
-    background-color: var(--amarillo);
-    height: 5vh;
-    position: absolute;
-    top: 50vh;
-    width: 100%;
+.awards {
+    max-height: 30vh;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.navmenu-header {
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.navmenu-header a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    transition: .3s ease-in-out;
+}
+
+.navmenu-header a:hover {
+    color: var(--amarillo);
+    text-shadow: 1px 2px 3px var(--oscuro);
 }
