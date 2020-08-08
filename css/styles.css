@@ -58,7 +58,7 @@ h3 {
 }
 
 .awards {
-    max-height: 30vh;
+    max-height: 40vh;
     margin: 0 auto;
     border-radius: 15px;
 }
@@ -83,4 +83,33 @@ h3 {
 .navmenu-header a:hover {
     color: var(--amarillo);
     text-shadow: 1px 2px 3px var(--oscuro);
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: var(--oscuro);
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    flex-flow: row wrap;
+    height: 10vh;
+    transition: .5s ease-in-out;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+.height-anim {
+    height: 15vh;
+    transition: .2s ease-in-out;
 }
