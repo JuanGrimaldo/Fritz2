@@ -5,49 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fritz European Fry House - Vancouver BC</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 
 <body>
     <!--Identifica hero-->
-    <header class="hero">
+    <header id="hero" class="hero">
         <div class="slogan">
             <p>Best Poutine & Fritz in Town!</p>
             <h1>Fritz European Fry House</h1>
         </div>
-        <img src="img/awards.png" class="awards" alt="golden plates awards">
+        <img src="img/awards-2020.png" class="awards" alt="golden plates awards">
+
     </header>
 
     <!--Barra de navegacion-->
-    <nav id="navbar" class="navmenu-header height-anim">
-        <a href="#">Fritz</a>
-        <a href="#">Menu</a>
-        <a href="#">Awards</a>
-        <a href="#">Reviews</a>
-        <a href="#">Location</a>
-        <a href="#">Contact Us</a>
+    <nav id="navbar" class="navmenu-header ">
+        <a href="#fritz">Fritz</a>
+        <a href="#menu">Menu</a>
+        <a href="#awards">Awards</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact Us</a>
     </nav>
 
     <!--Primera seccion de la pagina "Fritz"-->
-    <section>
+    <section id="fritz" class="our-story">
         <h2>Fritz: Our Story</h2>
 
-        <p>At Fritz we specialize in fries.</p>
+        <div class="story-group">
+            <div class="story-icon">
+                <i class="fas fa-utensils"></i>
+                <p>At Fritz we specialize in fries.</p>
+            </div>
+            <div class="story-icon">
+                <i class="fas fa-heart"></i>
+                <p>All of our fries are hand cut and prepared to exacting standards.</p>
+            </div>
+            <div class="story-icon">
+                <i class="fas fa-seedling"></i>
+                <p>The best Canadian grown potatoes are cooked in pure vegetable oil.</p>
+            </div>
+            <div class="story-icon">
+                <i class="fas fa-award"></i>
+                <p>Our dips are fresh and plentiful. Our poutine is authentic, and our fries are award winning.</p>
 
-        <p>All of our fries are hand cut and prepared to exacting standards.</p>
+            </div>
+            <div class="story-icon">
+                <i class="fas fa-clock"></i>
+                <p>Best of all, we are open late!</p>
+            </div>
 
-        <p>The best Canadian grown potatoes are cooked in pure vegetable oil.</p>
+        </div>
 
-        <p>Our dips are fresh and plentiful. Our poutine is authentic, and our fries are award winning.</p>
 
-        <p>Best of all, we are open late!</p>
+
+
+
+
+
     </section>
 
     <!--Segunda seccion de la pagina "Menu"-->
-    <section>
+    <section id="menu">
         <h2>Menu</h2>
         <div>
             <h3>Fritz</h3>
@@ -62,12 +86,12 @@
     </section>
 
     <!--Tercera seccion de la pagina "Awards"-->
-    <section>
+    <section id="awards">
         <h2>Awards</h2>
     </section>
 
     <!--Cuarta seccion de la pagina "Reviews"-->
-    <section>
+    <section id="reviews">
         <h2>Reviews</h2>
         <article>
             <!--stars-->
@@ -102,7 +126,7 @@
     </section>
 
     <!--Quinta seccion de la pagina "Location/Hours"-->
-    <section>
+    <section id="location">
         <h2>Location</h2>
         <h3>Fritz European Fry House</h3>
         <p>718 Davie St. (at Granville) Vancouver BC V6Z 1B6 (604) 684-0811</p>
@@ -121,7 +145,7 @@
 
 
     <!--Sexta seccion de la pagina "Contact Us"-->
-    <section>
+    <section id="contact">
         <h2>Contact Us</h2>
         <form action="">
             <legend>Please leave your comments and suggestions here.</legend>

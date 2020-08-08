@@ -9,7 +9,8 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-family: 'Lato', sans-serif;
 }
 
 h1,
@@ -17,24 +18,29 @@ h2,
 h3 {
     margin: 0;
     font-family: 'Libre Baskerville', serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3.5rem;
 }
 
 .hero {
     background-image: url(../img/hero2.jpg);
     filter: blur(0px);
     background-size: cover;
-    height: 100vh;
+    height: 90vh;
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .slogan {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
-    border: 3px solid var(--rojo);
+    border: 5px solid var(--amarillo);
     border-style: solid solid solid dotted;
     border-radius: 0 0 15px 0;
     margin-top: 2rem;
@@ -64,11 +70,13 @@ h3 {
 }
 
 .navmenu-header {
-    height: 15vh;
+    height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: black;
+    border-top: 1.5px solid var(--amarillo);
+    transition: .3s ease-in-out;
 }
 
 .navmenu-header a {
@@ -83,15 +91,21 @@ h3 {
 .navmenu-header a:hover {
     color: var(--amarillo);
     text-shadow: 1px 2px 3px var(--oscuro);
+    font-size: 2.1rem;
+    transition: .3s ease-in-out;
 }
 
 #navbar {
     overflow: hidden;
-    background-color: var(--oscuro);
 }
 
 .content {
-    padding: 16px;
+    padding: 10vh;
+}
+
+.sticky-add {
+    height: 0;
+    transition: 1s ease-in-out;
 }
 
 .sticky {
@@ -106,10 +120,36 @@ h3 {
 }
 
 .sticky+.content {
-    padding-top: 60px;
+    padding-top: 4rem;
 }
 
-.height-anim {
-    height: 15vh;
-    transition: .2s ease-in-out;
+section {
+    padding-top: 10rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fix-height {
+    margin-bottom: 10vh;
+}
+
+
+/**Our story section**/
+
+.story-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.story-icon {
+    width: 40%;
+    background-color: var(--amarillo);
+    margin: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.story-icon i {
+    font-size: 4rem;
 }
