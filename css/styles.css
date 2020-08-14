@@ -257,3 +257,18 @@ section {
 .social-networks a {
     padding: 2rem;
 }
+
+.active-nav {
+    color: var(--amarillo) !important;
+}
+
+.active-nav+.content {
+    padding-top: 4rem;
+}
+
+#awards,
+#reviews,
+#location,
+#contact {
+    height: 100vh;
+}
