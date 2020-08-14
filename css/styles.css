@@ -34,7 +34,7 @@ h2 {
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .slogan {
@@ -65,9 +65,31 @@ h2 {
 }
 
 .awards {
-    max-height: 40vh;
-    margin: 0 auto;
-    border-radius: 15px;
+    max-height: 30vh;
+    margin: 1rem 3rem;
+}
+
+.header-awards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+    text-shadow: 1px 1px 10px var(--oscuro);
+}
+
+.header-awards p {
+    margin: 1rem;
+}
+
+.header-awards i {
+    font-size: 8rem;
+    color: var(--amarillo);
+}
+
+.awards-group {
+    display: flex;
+    justify-content: center;
 }
 
 .navmenu-header {
