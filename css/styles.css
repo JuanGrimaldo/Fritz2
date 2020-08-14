@@ -159,6 +159,12 @@ section {
 
 /**Our story section**/
 
+.our-story {
+    max-width: 100%;
+    background-color: white;
+    background-size: cover;
+}
+
 .story-group {
     display: flex;
     flex-wrap: wrap;
@@ -177,6 +183,12 @@ section {
 .story-icon i {
     font-size: 4rem;
     color: var(--oscuro);
+    transition: .3s ease-in-out;
+}
+
+.story-icon i:hover {
+    color: var(--rojo);
+    font-size: 4.5rem;
 }
 
 
@@ -240,4 +252,8 @@ section {
 
 .menu p {
     line-height: .4;
+}
+
+.social-networks a {
+    padding: 2rem;
 }
