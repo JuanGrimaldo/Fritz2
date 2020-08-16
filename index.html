@@ -188,59 +188,50 @@
     <!--Quinta seccion de la pagina "Location/Hours"-->
     <section id="location">
         <h2>Location</h2>
-        <h3>Fritz European Fry House</h3>
-        <p>718 Davie St. (at Granville) Vancouver BC V6Z 1B6 (604) 684-0811</p>
 
-        <h2>Hours</h2>
-        <ul>
-            <li><span>Monday</span> 11:00am to 9:00pm</li>
-            <li><span>Tuesday</span> 11:00am to 9:00pm</li>
-            <li><span>Wednesday</span> 11:00am to 2:00am</li>
-            <li><span>Thursday</span> 11:00am to 2:00am</li>
-            <li><span>Friday</span> 11:00am to 4:00am</li>
-            <li><span>Saturday</span> 11:00am to 4:00am</li>
-            <li><span>Sunday</span> 11:00am to 2:00am</li>
-        </ul>
+        <div class="site">
+            <div class="location">
+                <p><i class="fas fa-map-marker-alt"></i></p>
+                <p>718 Davie St. </p>
+                <p>(at Granville) Vancouver BC</p>
+                <p>V6Z 1B6</p>
+                <p>(604) 684-0811</p>
+            </div>
+            <div class="hours">
+                <p><i class="fas fa-clock"></i></p>
+                <p>Monday - Tuesday: 11am - 9pm</p>
+                <p>Wednesday - Thursday: 11am - 2am</p>
+                <p>Friday - Saturday: 11am - 4am</p>
+                <p>Sunday: 11am - 2am</p>
+            </div>
+
+        </div>
+
     </section>
 
 
     <!--Sexta seccion de la pagina "Contact Us"-->
-    <section id="contact">
+    <section id="contact" class="contact">
         <h2>Contact Us</h2>
         <form action="">
             <legend>Please leave your comments and suggestions here.</legend>
+            <div class="input-group">
+                <input type="name" required placeholder="Name">
+            </div>
 
-            <label>Name: </label>
-            <input type="name" required>
-
-            <label>Email: </label>
-            <input type="email" required>
-
-            <label>Message: </label>
-            <textarea required></textarea>
-
-            <button>Submit</button>
+            <div class="input-group">
+                <input type="email" required placeholder="Email">
+            </div>
+            <div class="input-group">
+                <textarea required placeholder="Message"></textarea>
+            </div>
+            <button class="submit">Submit</button>
         </form>
     </section>
 
 
     <!--Footer de la pagina-->
-    <footer>
-        <!--Menu de navegacion en footer-->
-        <nav>
-            <a href="#">Fritz</a>
-            <a href="#">Menu</a>
-            <a href="#">Awards</a>
-            <a href="#">Reviews</a>
-            <a href="#">Location</a>
-            <a href="#">Contact Us</a>
-        </nav>
-
-        <!--Logotipo-->
-        <div></div>
-
-        <!--Redes-->
-        <div></div>
+    <footer class="footer">
     </footer>
 </body>
 <script src="js/script.js"></script>
