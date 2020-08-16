@@ -289,9 +289,41 @@ section {
     padding-top: 4rem;
 }
 
-#awards,
-#reviews,
-#location,
-#contact {
-    height: 100vh;
+#awards {
+    max-width: 100%;
+    padding-top: 0;
+}
+
+.awards-2020 {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.reviews-section {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.review {
+    max-width: 700px;
+    margin: 2rem;
+    padding: 1rem;
+    border: 5px solid var(--amarillo);
+    border-style: solid solid solid dotted;
+    border-radius: 0 0 15px 0;
+}
+
+.review p {
+    text-align: justify;
+}
+
+.review-stars {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--rojo);
+}
+
+.review-stars i {
+    padding: .5rem;
 }
