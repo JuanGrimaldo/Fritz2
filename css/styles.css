@@ -215,66 +215,64 @@ section {
 }
 
 
-/**Menu section**/
-
-.container-menu {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5rem;
-    text-align: center;
-}
-
-.menu {
-    width: 20%;
-    color: white;
-    line-height: 1rem;
-}
-
-.fix-menu {
-    background-color: black;
-    padding: 4rem 0 2rem 0;
-    margin-top: 1rem;
-    border-radius: 30px;
-}
-
-.menu1 img,
-.menu2 img {
-    max-width: 100%;
-    margin: 0 auto;
-}
+/**Menu **/
 
 .menu-cover {
-    background-color: var(--amarillo);
+    background-color: var(--oscuro);
     max-width: 100%;
+    color: white;
+    padding-bottom: 5rem;
 }
 
 .menu-cover h2 {
-    background-color: black;
-    max-width: 100%;
-    margin: 0 auto;
-    height: 10vh;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu3,
-.menu4 {
+    background-color: var(--amarillo);
     color: black;
-}
-
-.menu h4 {
-    color: white;
-    background-color: black;
-    font-size: 1.5rem;
     padding: 1rem;
     margin: 0;
-    border-radius: 5px;
 }
 
-.menu p {
-    line-height: .4;
+.menu-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.menu-subtitle i {
+    color: var(--amarillo);
+    font-size: 1.5rem;
+}
+
+.menu-description {
+    width: 25%;
+}
+
+.menu-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu-item {
+    display: flex;
+    margin: 1.5rem;
+    justify-content: space-between;
+}
+
+.menu-name {
+    margin: 0 2rem 0 0;
+}
+
+.menu-price {
+    color: var(--amarillo);
+    font-size: 2rem;
+}
+
+.ad-oum {
+    color: var(--rojo);
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .social-networks a {
@@ -303,7 +301,6 @@ section {
 .reviews-section {
     max-width: 700px;
     margin: 0 auto;
-    margin-bottom: 10rem;
 }
 
 .review {
