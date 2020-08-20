@@ -31,7 +31,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Lato', sans-serif;
 }
 
 p,
@@ -311,9 +311,13 @@ section {
 }
 
 .awards-2020 {
-    max-width: 100%;
+    width: 100%;
     display: block;
     margin: 0 auto;
+}
+
+#reviews h2 {
+    color: var(--oscuro);
 }
 
 .reviews-section {
@@ -326,9 +330,6 @@ section {
     margin: 2rem;
     margin-bottom: 4rem;
     padding: 1rem;
-    border: 5px solid var(--amarillo);
-    border-style: solid solid solid dotted;
-    border-radius: 0 0 15px 0;
 }
 
 .review p {
@@ -340,9 +341,9 @@ section {
 }
 
 .review-stars {
-    text-align: center;
+    text-align: left;
     font-size: 2.5rem;
-    color: var(--rojo);
+    color: var(--amarillo);
 }
 
 .review-stars i {
@@ -376,11 +377,14 @@ section {
 
 .site div p {
     text-align: center;
+    font-size: 2.2rem;
 }
 
 .site div p i {
     font-size: 4rem;
     text-align: center;
+    color: white;
+    text-shadow: 1px 1px 10px var(--oscuro);
 }
 
 .contact form legend {
@@ -428,6 +432,25 @@ section {
 
 .footer {
     margin-top: 5rem;
-    height: 45vh;
+    height: 30vh;
     background-color: var(--oscuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan-footer {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan-footer h1 {
+    color: var(--amarillo);
+    font-size: 2.5rem;
 }
