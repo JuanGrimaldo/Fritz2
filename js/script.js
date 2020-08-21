@@ -94,3 +94,16 @@ function myFunction() {
         contact_id.classList.remove("active-nav")
     }
 }
+
+
+var display_menu = document.getElementById("display-menu")
+
+display_menu.addEventListener("click", function(event) {
+    navbar.classList.add("show-menu");
+}, false);
+
+
+navbar.addEventListener("click", function(event) {
+    navbar.classList.add("hide-menu");
+    navbar.classList.remove("show-menu");
+}, false);
