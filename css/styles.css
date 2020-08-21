@@ -311,6 +311,13 @@ section {
     color: var(--amarillo);
 }
 
+.award-text a {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--amarillo);
+}
+
 .award-image {
     width: 50%;
 }
