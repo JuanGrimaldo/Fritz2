@@ -46,27 +46,27 @@ function myFunction() {
         hero.classList.remove("fix-height")
     }
 
-    if (window.pageYOffset >= fritz_top) {
+    if (window.pageYOffset +20 >= fritz_top) {
         fritz_id.classList.add("active-nav")
     } else {
         fritz_id.classList.remove("active-nav")
     }
 
-    if (window.pageYOffset + 40 >= menu_top) {
+    if (window.pageYOffset + 20 >= menu_top) {
         menu_id.classList.add("active-nav")
         fritz_id.classList.remove("active-nav")
     } else {
         menu_id.classList.remove("active-nav")
     }
 
-    if (window.pageYOffset + 40 >= awards_top) {
+    if (window.pageYOffset + 20 >= awards_top) {
         awards_id.classList.add("active-nav")
         fritz_id.classList.remove("active-nav")
         menu_id.classList.remove("active-nav")
     } else {
         awards_id.classList.remove("active-nav")
     }
-    if (window.pageYOffset + 40 >= reviews_top) {
+    if (window.pageYOffset + 20 >= reviews_top) {
         reviews_id.classList.add("active-nav")
         fritz_id.classList.remove("active-nav")
         menu_id.classList.remove("active-nav")
@@ -74,7 +74,7 @@ function myFunction() {
     } else {
         reviews_id.classList.remove("active-nav")
     }
-    if (window.pageYOffset + 40 >= location_top) {
+    if (window.pageYOffset + 20 >= location_top) {
         location_id.classList.add("active-nav")
         fritz_id.classList.remove("active-nav")
         menu_id.classList.remove("active-nav")
@@ -83,7 +83,7 @@ function myFunction() {
     } else {
         location_id.classList.remove("active-nav")
     }
-    if (window.pageYOffset + 40 >= contact_top) {
+    if (window.pageYOffset + 20 >= contact_top) {
         contact_id.classList.add("active-nav")
         fritz_id.classList.remove("active-nav")
         menu_id.classList.remove("active-nav")
