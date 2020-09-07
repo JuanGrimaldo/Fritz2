@@ -46,7 +46,7 @@ function myFunction() {
         hero.classList.remove("fix-height")
     }
 
-    if (window.pageYOffset +20 >= fritz_top) {
+    if (window.pageYOffset + 20 >= fritz_top) {
         fritz_id.classList.add("active-nav")
     } else {
         fritz_id.classList.remove("active-nav")

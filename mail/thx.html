@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Fritz, Fry House, Poutine, Vancouver, Fries, Food, European">
+    <meta name="description" content="At Fritz we specialize in fries. At Fritz we specialize in fries. The best Canadian grown potatoes are cooked in pure vegetable oil. Our dips are fresh and plentiful. Our poutine is authentic, and our fries are award winning. Best of all, we are open late!">
+    <title>Submitted form</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville&family=Merienda+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+    <section class="formulario-enviado">
+
+        <h1>Thank's for contacting us!</h1>
+        <h2>Submitted form</h2>
+
+
+        <div id="delayMsg">
+
+        </div>
+        <input class="button-redirect" type="button" onclick="delayRedirect()" value="Click to redirect" />
+    </section>
+
+
+
+    <script>
+        function delayRedirect() {
+            document.getElementById('delayMsg').innerHTML = '<p class="text-center">You will be redirected in <span id = "countDown"> 5 </span> seconds...</p>';
+            var count = 5;
+            setInterval(function() {
+                count--;
+                document.getElementById('countDown').innerHTML = count;
+                if (count == 0) {
+                    window.location = '../index.html';
+                }
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>
