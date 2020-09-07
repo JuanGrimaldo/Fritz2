@@ -472,6 +472,11 @@ section {
     font-size: 2.5rem;
 }
 
+.slogan-footer a {
+    margin-top: 1rem;
+    color: var(--amarillo);
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
