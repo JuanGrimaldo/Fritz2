@@ -333,6 +333,10 @@ section {
     width: 50%;
 }
 
+.award-image picture img {
+    width: 100%;
+}
+
 #reviews h2 {
     color: var(--oscuro);
 }
