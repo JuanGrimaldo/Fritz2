@@ -71,7 +71,7 @@ span {
 }
 
 .hero {
-    background-image: url(../img/hero2.jpg);
+    background-image: url(../img/hero2.webp);
     filter: blur(0);
     background-size: cover;
     height: 90vh;
@@ -151,7 +151,7 @@ section {
 
 .our-story {
     max-width: 100%;
-    background-image: url(../img/french.jpg);
+    background-image: url(../img/french.webp);
     background-size: cover;
 }
 
@@ -375,7 +375,7 @@ section {
     max-width: 100%;
     margin-right: 0;
     margin-left: 0;
-    background-image: url(../img/location-bg.jpg);
+    background-image: url(../img/location-bg.webp);
     background-size: cover;
     height: 100vh;
 }
