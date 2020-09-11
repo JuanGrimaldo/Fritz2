@@ -7,6 +7,12 @@
     <meta name="keywords" content="Fritz, Fry House, Poutine, Vancouver, Fries, Food, European">
     <meta name="description" content="At Fritz we specialize in fries. At Fritz we specialize in fries. The best Canadian grown potatoes are cooked in pure vegetable oil. Our dips are fresh and plentiful. Our poutine is authentic, and our fries are award winning. Best of all, we are open late!">
     <title>Fritz European Fry House - Vancouver BC</title>
+    <link rel="preload" as="style" href="css/normalize.css">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville&family=Merienda+One&display=swap">
+    <link rel="preload" as="style" href="css/styles.css">
+    <link rel="preload" as="style" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville&family=Merienda+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
@@ -22,7 +28,7 @@
     </div>
 
     <!--Identifica hero-->
-    <header id="hero" class="hero">
+    <header id="hero" class="hero_class">
 
         <div class="header-awards">
             <i class="fas fa-award"></i>
@@ -45,7 +51,7 @@
     <!--Barra de navegacion-->
 
     <nav id="navbar" class="navmenu-header ">
-        <a id="hero" href="#hero">Home</a>
+        <a href="#hero">Home</a>
         <a id="fritz_nav" href="#fritz">Fritz</a>
         <a id="menu_nav" href="#menu">Menu</a>
         <a id="awards_nav" href="#awards">Awards</a>
@@ -366,14 +372,17 @@
         <form action="mail/enviar.php" method="POST">
             <legend>Please leave your comments and suggestions here.</legend>
             <div class="input-group">
-                <input type="name" name="name" required placeholder="Name">
+                <label for="name" class="label-form">Name</label>
+                <input id="name" type="name" name="name" required placeholder="Enter your name">
             </div>
 
             <div class="input-group">
-                <input type="email" name="email" required placeholder="Email">
+                <label for="email" class="label-form">Email</label>
+                <input id="email" type="email" name="email" required placeholder="Enter your email">
             </div>
             <div class="input-group">
-                <textarea name="message" required placeholder="Message"></textarea>
+                <label for="message" class="label-form">Message</label>
+                <textarea id="message" name="message" required placeholder="Leave your comments"></textarea>
             </div>
             <button type="submit" class="submit">Submit</button>
         </form>
