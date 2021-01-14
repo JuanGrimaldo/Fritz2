@@ -645,3 +645,8 @@ section {
         width: 100%
     }
 }
+
+
+.flex-fix{
+    justify-content: space-around;
+}
